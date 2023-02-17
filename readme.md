@@ -1,3 +1,3 @@
 # MyFlix
 
-App para cadastro de filmes
+App for log all movies that you like, watched
