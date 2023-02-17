@@ -1,0 +1,62 @@
+body{
+    background-color: #080838ea !important;
+}
+
+
+*:focus{
+    box-shadow: none !important;
+}
+
+.list-group{
+    max-height: 550px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+#baseContainer{
+    padding-top: 50px;
+
+}
+
+#searchArea{
+    border-radius: 50px;
+    background-color: white;
+}
+
+#foundMoviesContainer{
+    opacity: 0.8;
+}
+
+
+#imgPoster{
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#foundFilms{    
+    border-bottom-style: solid;
+    border-top: none ;
+    border-left: none;
+    border-right: none;
+
+    background-color: #050524ea;
+    color: #b9b9b9;
+}
+
+#lastedViewed{
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+#watchedMoviePoster{
+    width: 200px;
+    padding-right: 15px;
+
+}
+
+i.fa-solid.fa-eye:hover{
+    font-size: 32px;
+}

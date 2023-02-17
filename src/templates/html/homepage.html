@@ -1,0 +1,49 @@
+<!--#include virtual="header.html" -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFlix</title>
+
+    <link rel="stylesheet" href="/src/templates/css/homepage.css">
+    <script src="https://kit.fontawesome.com/9a1b08e6e2.js" crossorigin="anonymous"></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/src/templates/js/homepage.js"></script>
+
+</head>
+<body>
+    <div class="container-xl d-flex justify-content-center" id="baseContainer">
+        <div class="input-group input-group-lg align-items-center" id="searchArea">
+            <!-- onClick function is for show div when clicked inside of box-->
+            <input type="text" class="form-control" placeholder="Busque um filme ou série" id="searchForm" onkeypress="pressedEnterKey()" onclick="document.getElementById('foundMoviesContainer').style.display='block'">
+            <button class="btn btn-inline-secondary" onclick="allMovies()" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-xl justify-content-lg-start" id="foundMoviesContainer">
+        <ul class="list-group" id="resultFilmList">
+
+        </ul>
+    </div>    
+
+    <div class="container-xll justify-content-start" >
+        <div class="col px-4 pt-4">
+            <h5 style="border-bottom: 1px solid; color:white;">Filmes Recentemente Vistos</h5>
+        </div>
+        <div class="col-xxl d-flex justify-content-start" id="lastedViewed">
+            
+        </div>
+    </div>
+</body>
+</html>
