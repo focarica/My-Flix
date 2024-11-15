@@ -8,7 +8,7 @@ async function searchMovie(){
     document.getElementById('foundMoviesContainer').style.display='block'
     var search = document.getElementById('searchForm').value
 
-    const api_key = '9290c68b013a5e25d5b4d21946ce7804'
+    const api_key = 'YOUR API KEY'
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${search}&language=pt-BR`
 
     const response = await axios.get(url)
@@ -65,7 +65,7 @@ async function hideSearch(){
 
 
 async function saveToWatchedList(id){
-    const api_key = '9290c68b013a5e25d5b4d21946ce7804'
+    const api_key = 'YOUR API KEY'
     const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}`)
     const data = response.data
 
@@ -84,7 +84,7 @@ async function saveToWatchedList(id){
 }
 
 async function getWatchedList(){
-    const api_key = '9290c68b013a5e25d5b4d21946ce7804'
+    const api_key = 'YOUR API KEY'
     const response = await axios.get('http://localhost:8000/movies')
     const watchedMovies = response.data
     
